@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Add subtitles to video online free. Embed SRT subtitle files into your MP4 securely in your browser quickly." />
+    <title>Add Subtitle to Video | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Add Subtitle to Video | Tooleva",
+    "description": "Add subtitles to video online free. Embed SRT subtitle files into your MP4 securely in your browser quickly.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/add-subtitle/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors text-primary-600">Video Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full flex flex-col items-center">
+        <!-- Ad Space: Top Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 w-full">
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[90px]">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Leaderboard 728x90)</span>
+            </div>
+        </div>
+        <div class="text-center mb-10 w-full">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">Add Subtitle to Video</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Embed SRT/VTT subtitle files directly into your MP4 video purely in your browser.</p>
+        </div>
+
+        <div class="card p-8 mb-8 w-full relative border-gray-100 dark:border-slate-700">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Video File -->
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-gray-700 dark:text-gray-300">1. Video File</label>
+                    <div id="drop-zone-video" class="drop-zone group !p-6">
+                        <svg class="w-8 h-8 text-gray-400 mb-2 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        <p class="text-sm font-bold text-gray-900 dark:text-white">Upload MP4 Video</p>
+                    </div>
+                    <input type="file" id="file-input-video" class="hidden" accept="video/mp4" />
+                    <div id="file-info-video" class="hidden p-3 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm truncate relative pr-8">
+                        <span id="file-name-video">video.mp4</span>
+                        <button type="button" id="clear-video" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                    </div>
+                </div>
+
+                <!-- Subtitle File -->
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-gray-700 dark:text-gray-300">2. Subtitle File (SRT/VTT)</label>
+                    <div id="drop-zone-sub" class="drop-zone group !p-6">
+                        <svg class="w-8 h-8 text-gray-400 mb-2 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <p class="text-sm font-bold text-gray-900 dark:text-white">Upload Subtitles</p>
+                    </div>
+                    <input type="file" id="file-input-sub" class="hidden" accept=".srt,.vtt,text/vtt" />
+                    <div id="file-info-sub" class="hidden p-3 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 rounded-lg text-sm truncate relative pr-8">
+                        <span id="file-name-sub">subs.srt</span>
+                        <button type="button" id="clear-sub" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="editor-area" class="hidden flex-col w-full">
+                <div class="bg-blue-50 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 p-4 rounded-xl border border-blue-200 dark:border-blue-900/50 mb-6 text-sm flex gap-3">
+                    <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                    <p>The subtitle file will be embedded directly into the MP4 as a selectable soft-subtitle track (mov_text). This process is very fast as it does not require re-encoding the video.</p>
+                </div>
+                
+                <div class="flex justify-center mt-2">
+                    <button type="button" id="btn-process" class="btn-primary w-full sm:w-auto px-12 py-3 shadow-soft">Add Subtitles</button>
+                </div>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="hidden flex-col items-center justify-center py-8">
+                <div class="relative w-16 h-16 mb-6">
+                    <div class="absolute border-4 border-gray-200 dark:border-slate-700 rounded-full inset-0"></div>
+                    <div class="absolute border-4 border-primary-500 rounded-full inset-0 border-t-transparent animate-spin"></div>
+                </div>
+                <p id="progress-text" class="text-lg font-bold text-gray-800 dark:text-gray-200">Writing Subtitles to Video...</p>
+                <div class="w-full max-w-md bg-gray-200 dark:bg-slate-700 rounded-full h-2 mt-4">
+                    <div id="progress-bar" class="bg-primary-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result -->
+        <div id="result-area" class="hidden card bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900 p-8 text-center w-full relative">
+            <h3 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6">Subtitles Added Successfully!</h3>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button type="button" id="btn-restart" class="btn-secondary py-3">Add Another</button>
+                <button type="button" id="btn-download" class="btn-primary !bg-green-600 hover:!bg-green-700 py-3 px-8">Download MP4 with Subs</button>
+            </div>
+        </div>
+    
+            <!-- Ad Space: Sidebar/Medium Rectangle -->
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[250px] mt-8">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Medium 300x250)</span>
+            </div>
+        </main>
+    <script type="module" src="./main.js"></script>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

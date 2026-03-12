@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Tools | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Text Tools | Tooleva",
+    "description": "A free online tool by Tooleva.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/text-tools/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="flex flex-col min-h-screen antialiased">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 rounded-xl transition-colors"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">Text Tools</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Manipulate, count, and format text instantly with 0 latency.</p>
+        </div>
+
+                                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/tools/case-converter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Case Converter & Capitalizer</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Case Converter. Change text to UPPERTCASE, lowercase, title case, and sentence case easi...</p>
+                    </a>
+                    <a href="/tools/character-counter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Character Counter & Letter Count</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Character Counter. Count letters, characters, strings and spaces instantly.</p>
+                    </a>
+                    <a href="/tools/lorem-ipsum-generator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Lorem Ipsum Generator</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Generate Lorem Ipsum placeholder text online instantly. Perfect for web design, mockups, and testing...</p>
+                    </a>
+                    <a href="/tools/password-generator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Strong Password Generator</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Password Generator. Create secure, random, and strong passwords instantly with custom se...</p>
+                    </a>
+                    <a href="/tools/password-strength-checker/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Password Strength Checker</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Password Strength Checker. Analyze your password to see how secure it is against crackin...</p>
+                    </a>
+                    <a href="/tools/pdf-to-word/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">PDF to Word</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Convert PDF to Word free online. Extract text from your PDF into a Word document.</p>
+                    </a>
+                    <a href="/tools/random-text-generator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Random Text & Lorem Ipsum Generator</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Generate random text and Lorem Ipsum online instantly. Perfect for web design placeholders and testi...</p>
+                    </a>
+                    <a href="/tools/remove-duplicate-lines/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Remove Duplicate Lines</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Remove duplicate lines from text automatically online. Free duplicate line remover for lists and ema...</p>
+                    </a>
+                    <a href="/tools/remove-extra-spaces/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Remove Extra Spaces</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Remove extra spaces between words and lines online for free. Clean up your text formatting instantly...</p>
+                    </a>
+                    <a href="/tools/secure-text/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Secure Text Tool</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Secure Notes Tool. Protect your plain text messages into obfuscated locked notes.</p>
+                    </a>
+                    <a href="/tools/slug-generator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">URL Slug Generator</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Generate URL-friendly slugs from any text online easily. Fast slug generator for developers and SEO.</p>
+                    </a>
+                    <a href="/tools/text-reverser/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Text Reverser | Reverse Text Online</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Reverse text, words, and letters online for free. Fun text reverser and backward text generator.</p>
+                    </a>
+                    <a href="/tools/text-sorter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Sort Text Editor</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Sort text alphabetically online. Free tool to alphabetize lists A-Z, Z-A, by length or randomly.</p>
+                    </a>
+                    <a href="/tools/text-to-handwriting/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Text to Handwriting Converter</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Convert your digital typed text to realistic handwriting online for free. Download as an image insta...</p>
+                    </a>
+                    <a href="/tools/word-counter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 text-yellow-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Word Counter</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Word Counter. Count words, characters, sentences, and paragraphs instantly.</p>
+                    </a>
+                </div>
+            
+            </main>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

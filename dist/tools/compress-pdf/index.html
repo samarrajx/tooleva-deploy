@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Compress PDF files online for free. Reduce file size quickly using your browser." />
+    <title>Compress PDF | Tooleva</title>
+  <script type="module" crossorigin src="/assets/compressPdf-BCNP43c4.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/assets/theme-DpIbbiJG.js">
+  <link rel="modulepreload" crossorigin href="/assets/_commonjsHelpers-Cpj98o6Y.js">
+  <link rel="modulepreload" crossorigin href="/assets/PDFButton-Ca75raqr.js">
+  <link rel="modulepreload" crossorigin href="/assets/dropzone-CFH8ReNc.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-XdKX-3K2.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-DCa9Tmzr.css">
+    <script type="module">
+        import { initThemeToggle } from '../../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+</head>
+<body class="flex flex-col min-h-screen antialiased">
+
+    <!-- Header -->
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-2">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <a href="/blog/index.html" class="hover:text-primary-600 transition-colors">Blog</a>
+                <a href="/about/index.html" class="hover:text-primary-600 transition-colors">About</a>
+                <a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a>
+                <button id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ad Banner Top -->
+    <div class="w-full bg-slate-100 dark:bg-slate-800/80 text-center py-2 text-xs text-gray-400 font-medium tracking-widest uppercase">
+        Advertisement Space (728x90)
+    </div>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+        <!-- Header Text -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Compress PDF</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Reduce your PDF file size dramatically without losing quality or uploading to any server.</p>
+        </div>
+
+        <!-- Tool Area -->
+        <div class="card p-8 mb-12 relative overflow-hidden">
+            <!-- Decorative Accent -->
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary-500 to-accent"></div>
+
+            <div id="drop-zone" class="drop-zone hidden md:flex mb-6 mt-4">
+                <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center mb-4 transition-transform duration-300 transform group-hover:scale-110">
+                    <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                </div>
+                <p class="text-xl font-bold mb-1">Drag & Drop your PDF here</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">or click to browse from device</p>
+            </div>
+            
+            <div class="flex justify-center mb-6 md:hidden mt-4">
+                <button onclick="document.getElementById('file-input').click()" class="btn-primary w-full text-lg py-4">Select PDF File</button>
+            </div>
+
+            <input type="file" id="file-input" class="hidden" accept="application/pdf" />
+
+            <!-- Selected File Area -->
+            <div id="file-info" class="hidden bg-slate-50 dark:bg-slate-900 rounded-xl p-4 border border-gray-200 dark:border-slate-700 mb-6 flex items-center justify-between">
+                <div class="flex items-center gap-4 overflow-hidden">
+                    <div class="p-3 bg-red-100 dark:bg-red-900/40 text-red-600 rounded-lg flex-shrink-0">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="truncate">
+                        <p id="file-name" class="font-bold text-gray-900 dark:text-gray-100 truncate">document.pdf</p>
+                        <p id="file-size" class="text-sm text-gray-500 dark:text-gray-400">0 MB</p>
+                    </div>
+                </div>
+                <button id="btn-remove" class="text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-slate-800 p-2 rounded-lg transition-colors focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Action Area -->
+            <div class="flex justify-center">
+                <button id="btn-compress" class="btn-primary w-full sm:w-auto text-lg px-12 py-4 hidden">
+                    Compress PDF Now
+                </button>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="hidden flex flex-col items-center justify-center py-10">
+                <div class="relative w-16 h-16 mb-6">
+                    <div class="absolute border-4 border-gray-200 dark:border-slate-700 rounded-full inset-0"></div>
+                    <div class="absolute border-4 border-primary-500 rounded-full inset-0 border-t-transparent animate-spin"></div>
+                </div>
+                <p class="text-lg font-bold text-gray-800 dark:text-gray-200">Optimizing Document...</p>
+                <p class="text-sm text-gray-500 mt-1">Processing locally in your browser</p>
+            </div>
+        </div>
+
+        <!-- Result -->
+        <div id="result-area" class="hidden card bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900 p-8 text-center animate-fade-in relative overflow-hidden mb-12">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <svg class="w-32 h-32 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            </div>
+            
+            <div class="relative z-10 text-center">
+                <div class="w-16 h-16 bg-green-100 dark:bg-green-800/50 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h3 class="text-3xl font-extrabold mb-2">Compression Complete!</h3>
+                <p id="savings-text" class="text-lg text-green-700 dark:text-green-400 font-medium mb-8">You saved 0 MB (0%)</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="location.reload()" class="btn-secondary">Compress Another</button>
+                    <button id="btn-download" class="btn-primary !bg-green-600 hover:!bg-green-700 !shadow-green-900/20 text-lg px-10 py-4">Download PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Banner Middle -->
+        <div class="w-full bg-slate-100 dark:bg-slate-800/80 text-center py-6 mb-12 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-gray-400 font-medium tracking-widest uppercase flex items-center justify-center min-h-[120px]">
+            Advertisement Space (Responsive)
+        </div>
+
+        <!-- How to Use Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">How to Compress a PDF</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                    <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 text-primary-600 rounded-full flex items-center justify-center font-bold text-xl mb-4">1</div>
+                    <h3 class="font-bold text-lg mb-2">Upload File</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Drag and drop your document into the box above, or select it from your device.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                    <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 text-primary-600 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <h3 class="font-bold text-lg mb-2">Local Processing</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Your browser instantly compresses the PDF structure natively without uploading it.</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                    <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 text-primary-600 rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
+                    <h3 class="font-bold text-lg mb-2">Download Securely</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Save your smaller file instantly. No email, no registration, no wait.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Article / Why Use Us -->
+        <section class="mb-12 card p-8 border-l-4 border-l-accent">
+            <h2 class="text-2xl font-bold mb-4">Secure & Private PDF Compression</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                Most online PDF compressors require you to upload your sensitive contracts, tax documents, or assignments to a remote server. This is a massive privacy risk. Tooleva uses WebAssembly and advanced browser APIs to process your files <strong>completely on your device</strong>. 
+            </p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                As soon as you select your file, your computer's RAM and CPU take over, optimizing the PDF objects and saving you space. Nothing is ever sent to our servers.
+            </p>
+        </section>
+
+        <!-- FAQs -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="group bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 p-6 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg">
+                        Is it completely free to compress PDFs?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4 text-sm leading-relaxed">Yes! Tooleva is 100% free to use. We do not place watermarks on your documents or limit your file sizes arbitrarily behind a paywall.</p>
+                </details>
+                <details class="group bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700 p-6 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center font-bold text-lg">
+                        Will the quality of my PDF degrade?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4 text-sm leading-relaxed">Our tool focuses on removing metadata and optimizing the internal structure (streams) of the PDF without significantly altering the visual elements mapping. However, heavily image-based PDFs may see less compression if the images are already optimal.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Related Tools -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6">Related Tools</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <a href="/tools/merge-pdf/index.html" class="card p-5 hover:bg-gray-50 dark:hover:bg-slate-800/80 flex items-center gap-4 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Merge PDF</h4>
+                        <p class="text-xs text-gray-500">Combine multiple files</p>
+                    </div>
+                </a>
+                <a href="/tools/split-pdf/index.html" class="card p-5 hover:bg-gray-50 dark:hover:bg-slate-800/80 flex items-center gap-4 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Split PDF</h4>
+                        <p class="text-xs text-gray-500">Extract pages securely</p>
+                    </div>
+                </a>
+                <a href="/tools/pdf-to-jpg/index.html" class="card p-5 hover:bg-gray-50 dark:hover:bg-slate-800/80 flex items-center gap-4 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">PDF to JPG</h4>
+                        <p class="text-xs text-gray-500">Convert to images</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

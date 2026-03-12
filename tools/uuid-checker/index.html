@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free online UUID Checker. Validate, parse, and verify UUIDs (v1, v3, v4, v5) formatting and structure." />
+    <title>UUID Checker | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "UUID Checker | Tooleva",
+    "description": "Free online UUID Checker. Validate, parse, and verify UUIDs (v1, v3, v4, v5) formatting and structure.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/uuid-checker/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full flex flex-col items-center">
+        <!-- Ad Space: Top Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 w-full">
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[90px]">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Leaderboard 728x90)</span>
+            </div>
+        </div>
+        <div class="text-center mb-10 w-full">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">UUID Checker</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Validate and parse UUID/GUID formats, versions, and variants instantly.</p>
+        </div>
+
+        <div class="card p-8 mb-8 w-full border-gray-100 dark:border-slate-700 shadow-xl relative">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+
+            <div class="space-y-6">
+                
+                <div>
+                    <label class="flex justify-between items-center mb-2">
+                        <span class="font-semibold text-gray-700 dark:text-gray-300">Enter UUID String</span>
+                        <button type="button" id="btn-clear" class="text-xs font-bold text-red-500 hover:text-red-700 outline-none">Clear</button>
+                    </label>
+                    <div class="relative">
+                        <input type="text" id="uuid-input" class="w-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl py-4 pl-4 pr-12 text-gray-800 dark:text-gray-200 outline-none focus:ring-2 focus:ring-primary-500 font-mono text-lg shadow-sm transition-all" placeholder="e.g. 123e4567-e89b-12d3-a456-426614174000" />
+                        
+                        <!-- Status Icons Inside Input -->
+                        <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                            <svg id="icon-pass" class="w-6 h-6 text-emerald-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <svg id="icon-fail" class="w-6 h-6 text-red-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="result-box" class="hidden overflow-hidden rounded-xl border mt-8">
+                    <!-- Dynamic coloring via JS Classes based on Validity -->
+                    <div id="result-header" class="p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span id="result-title" class="font-bold uppercase tracking-wider text-sm">Valid UUID</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 bg-gray-50 dark:bg-slate-900/50 space-y-4">
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-200 dark:border-slate-700">
+                                <span class="block text-gray-500 text-xs uppercase font-semibold mb-1">Version</span>
+                                <span id="out-version" class="font-bold text-gray-800 dark:text-gray-200">Unknown</span>
+                            </div>
+                            <div class="bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-200 dark:border-slate-700">
+                                <span class="block text-gray-500 text-xs uppercase font-semibold mb-1">Variant</span>
+                                <span id="out-variant" class="font-bold text-gray-800 dark:text-gray-200">Unknown</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-200 dark:border-slate-700 text-sm overflow-x-auto">
+                            <span class="block text-gray-500 text-xs uppercase font-semibold mb-2">Canonical Format</span>
+                            <span id="out-canonical" class="font-mono text-primary-600 dark:text-primary-400 font-bold block pb-1 border-b border-gray-100 dark:border-slate-700 mb-1">N/A</span>
+                            <span id="out-urn" class="font-mono text-gray-600 dark:text-gray-400 block text-xs">urn:uuid:xxxx</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+            <!-- Ad Space: Sidebar/Medium Rectangle -->
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[250px] mt-8">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Medium 300x250)</span>
+            </div>
+        </main>
+    <script type="module" src="./main.js"></script>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

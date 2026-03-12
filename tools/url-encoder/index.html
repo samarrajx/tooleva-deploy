@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free online URL Encoder. Convert text into a URL-encoded string safely for web links and APIs." />
+    <title>URL Encoder | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "URL Encoder | Tooleva",
+    "description": "Free online URL Encoder. Convert text into a URL-encoded string safely for web links and APIs.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/url-encoder/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full flex flex-col items-center">
+        <!-- Ad Space: Top Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 w-full">
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[90px]">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Leaderboard 728x90)</span>
+            </div>
+        </div>
+        <div class="text-center mb-10 w-full">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">URL Encoder</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Convert characters to URL-safe format instantly (URI encoding).</p>
+        </div>
+
+        <div class="w-full flex flex-col h-full bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl shadow-xl overflow-hidden mb-8">
+            <div class="bg-gray-50 dark:bg-slate-900/50 p-4 border-b border-gray-200 dark:border-slate-700 flex justify-between items-center">
+                <div class="font-bold text-gray-700 dark:text-gray-200 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    Text to URL String
+                </div>
+                <div class="flex gap-2">
+                    <button type="button" id="btn-copy" class="p-2 text-sm font-bold text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded flex items-center gap-1 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> Copy Output
+                    </button>
+                    <button type="button" id="btn-clear" class="p-2 text-sm font-bold text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 rounded flex items-center gap-1 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg> Clear
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[400px]">
+                <textarea id="text-input" class="w-full h-full p-6 bg-transparent outline-none resize-none font-mono text-sm leading-relaxed text-gray-800 dark:text-gray-200 border-b md:border-b-0 md:border-r border-gray-200 dark:border-slate-700 placeholder-gray-400 dark:placeholder-gray-600" placeholder="Type or paste plain text here to encode..."></textarea>
+                
+                <div class="relative w-full h-full bg-gray-50 dark:bg-slate-900/60">
+                    <textarea id="text-output" class="absolute inset-0 w-full h-full p-6 bg-transparent outline-none resize-none font-mono text-sm leading-relaxed text-emerald-800 dark:text-emerald-300 placeholder-emerald-800/20 break-all" placeholder="URL Encoded output will appear here..." readonly></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-sm text-gray-500 dark:text-gray-400 w-full text-center">
+            Need to decode instead? <a href="/tools/url-decoder/index.html" class="text-primary-600 hover:underline">Go to URL Decoder</a>.
+        </div>
+    
+            <!-- Ad Space: Sidebar/Medium Rectangle -->
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[250px] mt-8">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Medium 300x250)</span>
+            </div>
+        </main>
+    <script type="module" src="./main.js"></script>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

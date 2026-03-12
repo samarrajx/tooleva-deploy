@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-light text-text-light font-body transition-colors duration-300 antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .dark body {
+    @apply bg-bg-dark text-text-dark;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  /* Prevent white-on-white or invisible textbox issues */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="range"]), 
+  textarea, 
+  select {
+    @apply text-gray-900;
+  }
+  .dark input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="range"]), 
+  .dark textarea, 
+  .dark select {
+    @apply text-gray-100;
+  }
+  
+  /* Fix Webkit autofill colors in dark mode */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+      -webkit-text-fill-color: #111827 !important;
+  }
+  .dark input:-webkit-autofill,
+  .dark input:-webkit-autofill:hover, 
+  .dark input:-webkit-autofill:focus, 
+  .dark input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #1e293b inset !important;
+      -webkit-text-fill-color: white !important;
+      transition: background-color 5000s ease-in-out 0V;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary-600 text-white font-medium py-3 px-6 rounded-xl shadow-soft hover:shadow-soft-lg hover:bg-primary-700 transition-colors duration-200 text-center inline-flex items-center justify-center gap-2 outline-none focus:outline-none focus:ring-0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .dark .btn-primary {
+    @apply shadow-none hover:shadow-none hover:brightness-110 border border-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-text-light border border-gray-200 font-medium py-3 px-6 rounded-xl shadow-soft hover:shadow-soft-lg hover:bg-gray-50 transition-colors duration-200 text-center inline-flex items-center justify-center gap-2 outline-none focus:outline-none focus:ring-0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .dark .btn-secondary {
+    @apply bg-slate-800 text-text-dark border-slate-700 hover:bg-slate-700 shadow-none hover:shadow-none;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl shadow-soft border border-gray-100 overflow-hidden hover:shadow-soft-lg transition-shadow duration-300;
+  }
+  .dark .card {
+    @apply bg-slate-800 border-slate-700 shadow-none hover:shadow-none hover:bg-slate-800/80 transition-colors duration-300;
+  }
+
+  /* File Drop Zone */
+  .drop-zone {
+    @apply border-2 border-dashed border-gray-300 rounded-xl p-8 text-center bg-gray-50/50 hover:bg-primary-50/50 hover:border-primary-400 transition-colors duration-200 cursor-pointer flex flex-col items-center justify-center min-h-[250px];
+  }
+  .dark .drop-zone {
+    @apply border-slate-600 bg-slate-800/50 hover:bg-primary-900/20 hover:border-primary-500;
+  }
+  
+  .drop-zone.dragover {
+    @apply border-primary-500 bg-primary-50 shadow-inner scale-[0.99] transition-transform duration-150;
+  }
+  .dark .drop-zone.dragover {
+    @apply border-primary-400 bg-primary-900/40;
+  }
+
+  /* Glass Navigation */
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-colors duration-300;
+  }
+  .dark .glass-nav {
+    @apply bg-slate-900/80 border-slate-800;
+  }
+
+  /* Inputs */
+  .input-field {
+    @apply w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-shadow outline-none;
+  }
+  .dark .input-field {
+    @apply bg-slate-800 border-slate-600 text-text-dark focus:ring-primary-500 focus:border-primary-500;
+  }
+
+  /* Gradients */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent;
+  }
+  .dark .text-gradient {
+    @apply from-primary-400 to-accent;
+  }
+}

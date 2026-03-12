@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Tools | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Developer Tools | Tooleva",
+    "description": "A free online tool by Tooleva.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/developer-tools/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="flex flex-col min-h-screen antialiased">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 rounded-xl transition-colors"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">Developer Tools</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Essential utilities for formatting, encoding, and minifying code.</p>
+        </div>
+
+                                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/tools/base64-decoder/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Base64 Decoder</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Base64 Decoder. Decode Base64 strings back to plain text format instantly and securely.</p>
+                    </a>
+                    <a href="/tools/base64-encoder/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Base64 Encoder</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Base64 Encoder. Convert plain text or data into Base64 format instantly and securely.</p>
+                    </a>
+                    <a href="/tools/color-converter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Color Converter (HEX, RGB, HSL)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online Color Converter tool. Convert colors between HEX, RGB, HSL, and HSV formats instantly.</p>
+                    </a>
+                    <a href="/tools/css-minifier/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">CSS Minifier & Compressor</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online CSS Minifier. Compress CSS stylesheets instantly to reduce file size and increase websit...</p>
+                    </a>
+                    <a href="/tools/html-formatter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">HTML Formatter & Beautifier</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online HTML Formatter. Beautify messy HTML code, indent tags correctly and make it human-readab...</p>
+                    </a>
+                    <a href="/tools/html-minifier/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">HTML Minifier & Compressor</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online HTML Minifier. Compress HTML source code to reduce file size and improve website loading...</p>
+                    </a>
+                    <a href="/tools/image-to-base64/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Image to Base64</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Convert Image to Base64 free online. Instantly generate a Base64 encoded string from your picture fo...</p>
+                    </a>
+                    <a href="/tools/json-formatter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">JSON Formatter & Beautifier</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online JSON Formatter and beautifier. Make your messy JSON code readable instantly, perfectly f...</p>
+                    </a>
+                    <a href="/tools/json-minifier/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">JSON Minifier & Compressor</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online JSON Minifier and compressor. Reduce the size of JSON payloads for production instantly.</p>
+                    </a>
+                    <a href="/tools/json-validator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">JSON Validator & Syntax Checker</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online JSON Validator tool. Quickly check if your JSON data is valid and pinpoint syntax errors...</p>
+                    </a>
+                    <a href="/tools/jwt-decoder/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">JWT Decoder & Inspector</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online JWT Decoder. Instantly decode and inspect JSON Web Tokens safely within your browser.</p>
+                    </a>
+                    <a href="/tools/url-decoder/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">URL Decoder</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online URL Decoder. Decode URL-encoded strings back to plain text format instantly.</p>
+                    </a>
+                    <a href="/tools/url-encoder/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">URL Encoder</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Free online URL Encoder. Convert text into a URL-encoded string safely for web links and APIs.</p>
+                    </a>
+                </div>
+            
+            </main>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

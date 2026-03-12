@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Online Scientific Calculator. Perform advanced math, trigonometry, logarithms, and standard arithmetic easily." />
+    <title>Scientific Calculator | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.0/math.min.js"></script>
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Scientific Calculator | Tooleva",
+    "description": "Free Online Scientific Calculator. Perform advanced math, trigonometry, logarithms, and standard arithmetic easily.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/scientific-calculator/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium items-center">
+                <a href="/tools/index.html" class="hover:text-primary-600 transition-colors">Tools</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full flex flex-col items-center">
+        <!-- Ad Space: Top Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 w-full">
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[90px]">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Leaderboard 728x90)</span>
+            </div>
+        </div>
+        <div class="text-center mb-10 w-full">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">Scientific Calculator</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Advanced math equations, trig functions, and arithmetic solved instantly.</p>
+        </div>
+
+        <!-- Calculator UI -->
+        <div class="w-full max-w-xl mx-auto bg-slate-900 dark:bg-black p-6 rounded-3xl shadow-2xl border border-gray-800 relative overflow-hidden">
+            <!-- Screen -->
+            <div class="bg-slate-800 dark:bg-slate-900 rounded-2xl p-4 mb-6 relative">
+                <input type="text" id="calc-exp" class="w-full bg-transparent text-right text-gray-400 text-sm mb-1 outline-none pointer-events-none" readonly />
+                <input type="text" id="calc-display" class="w-full bg-transparent text-right text-white text-4xl font-mono outline-none tracking-tight" value="0" readonly />
+                <!-- Mode indicator (Rad/Deg) -->
+                <div class="absolute top-2 left-3 flex gap-2">
+                    <button type="button" id="btn-deg" class="text-xs font-bold text-white transition-opacity opacity-50">DEG</button>
+                    <button type="button" id="btn-rad" class="text-xs font-bold text-white transition-opacity">RAD</button>
+                </div>
+            </div>
+
+            <!-- Keypad Grid -->
+            <div class="grid grid-cols-5 gap-2 sm:gap-3">
+                <!-- Row 1: Scientific Top -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="sin(">sin</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="cos(">cos</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="tan(">tan</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="pi">π</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="e">e</button>
+
+                <!-- Row 2: Scientific Mid -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="asin(">sin⁻¹</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="acos(">cos⁻¹</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="atan(">tan⁻¹</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="log(">log</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="ln(">ln</button>
+
+                <!-- Row 3: Math Top -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="(">(</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val=")">)</button>
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="^">xʸ</button>
+                <button type="button" id="btn-clear" class="calc-btn action col-span-2 text-white bg-red-600 hover:bg-red-700 font-bold">AC</button>
+
+                <!-- Row 4: Numbers & Basic Math -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="sqrt(">√</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="7">7</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="8">8</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="9">9</button>
+                <button type="button" class="calc-btn op text-xl text-accent hover:bg-slate-800 font-bold" data-val="/">÷</button>
+
+                <!-- Row 5: Numbers & Basic Math -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="!">n!</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="4">4</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="5">5</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="6">6</button>
+                <button type="button" class="calc-btn op text-xl text-accent hover:bg-slate-800 font-bold" data-val="*">×</button>
+
+                <!-- Row 6: Numbers & Basic Math -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="abs(">|x|</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="1">1</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="2">2</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="3">3</button>
+                <button type="button" class="calc-btn op text-xl text-accent hover:bg-slate-800 font-bold" data-val="-">−</button>
+
+                <!-- Row 7: Nums bottom -->
+                <button type="button" class="calc-btn sci text-sm text-primary-400 hover:bg-slate-800" data-val="%">%</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl" data-val="0">0</button>
+                <button type="button" class="calc-btn num bg-slate-800 text-white hover:bg-slate-700 text-xl font-bold" data-val=".">.</button>
+                <button type="button" id="btn-equals" class="calc-btn bg-accent text-slate-900 hover:bg-cyan-400 text-2xl font-bold">=</button>
+                <button type="button" class="calc-btn op text-xl text-accent hover:bg-slate-800 font-bold" data-val="+">+</button>
+            </div>
+        </div>
+    
+            <!-- Ad Space: Sidebar/Medium Rectangle -->
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[250px] mt-8">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Medium 300x250)</span>
+            </div>
+        </main>
+
+    <style>
+        .calc-btn {
+            border-radius: 0.75rem;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.1s ease;
+            user-select: none;
+        }
+        .calc-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+
+    <script type="module" src="./main.js"></script>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

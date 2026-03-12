@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free word counter tool. Instantly count words, characters, and sentences in your text." />
+    <title>Word Counter | Tooleva</title>
+  <script type="module" crossorigin src="/assets/wordCounter-BGm29WtX.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-XdKX-3K2.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-DCa9Tmzr.css">
+    <script type="module">
+        import { initThemeToggle } from '../../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-primary-600 flex items-center gap-2">Tooleva</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a>
+                <a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a>
+                <a href="/tools/calculators/index.html" class="text-primary-600 transition-colors">Calculators</a>
+                <button id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
+        <h1 class="text-3xl font-extrabold text-center mb-2">Word Counter</h1>
+        <p class="text-center text-gray-600 mb-8">Count words, characters, and paragraphs in real-time.</p>
+
+        <div class="mb-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
+                <p class="text-sm font-medium text-gray-500 mb-1">Words</p>
+                <p class="text-4xl font-extrabold text-primary-600" id="count-words">0</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
+                <p class="text-sm font-medium text-gray-500 mb-1">Characters</p>
+                <p class="text-4xl font-extrabold text-indigo-600" id="count-chars">0</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
+                <p class="text-sm font-medium text-gray-500 mb-1">Sentences</p>
+                <p class="text-4xl font-extrabold text-green-600" id="count-sentences">0</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
+                <p class="text-sm font-medium text-gray-500 mb-1">Paragraphs</p>
+                <p class="text-4xl font-extrabold text-yellow-500" id="count-paragraphs">0</p>
+            </div>
+        </div>
+
+        <div class="card p-4 sm:p-6 mb-8 bg-white border border-gray-200 shadow-sm relative">
+            <div class="absolute top-8 right-10 text-xs text-gray-400 font-mono" id="char-no-spaces">0 chars (no spaces)</div>
+            <textarea id="text-input" class="w-full h-80 px-4 py-4 text-gray-700 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white resize-y font-medium text-lg leading-relaxed shadow-inner" placeholder="Start typing or copy-paste your text here..."></textarea>
+            
+            <div class="flex justify-between items-center mt-4 text-sm">
+                <button id="btn-clear" class="text-red-500 hover:text-red-700 font-medium">Clear Text</button>
+                <p id="reading-time" class="text-gray-500">~0 min read</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            &copy; 2026 Tooleva. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

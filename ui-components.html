@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooleva UI Components Library</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module">
+        import { initThemeToggle } from './src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tooleva UI Components Library",
+    "description": "A free online tool by Tooleva.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/ui-components.html",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light text-text-light font-sans min-h-screen antialiased py-12 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-7xl mx-auto space-y-16">
+        <header class="flex justify-between items-center border-b border-gray-200 dark:border-slate-700 pb-8">
+            <div>
+                <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">UI Component Library</h1>
+                <p class="text-gray-500 dark:text-gray-400">Reference for the Tooleva SaaS Design System</p>
+            </div>
+            <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+        </header>
+
+        <!-- Buttons -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Buttons</h2>
+            <div class="flex flex-wrap gap-6 items-center p-8 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                
+                <button type="button" class="btn-primary">
+                    Primary Button
+                </button>
+                
+                <button type="button" class="btn-primary">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Primary w/ Icon
+                </button>
+
+                <button type="button" class="btn-secondary">
+                    Secondary Button
+                </button>
+
+                <button type="button" class="btn-secondary">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                    Filter
+                </button>
+                
+                <button type="button" class="btn-primary !bg-green-600 hover:!bg-green-700 !shadow-green-900/20">
+                    Success State
+                </button>
+            </div>
+        </section>
+
+        <!-- Inputs & Forms -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Form Elements</h2>
+            <div class="max-w-md p-8 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm space-y-6">
+                
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Standard Input</label>
+                    <input type="text" class="input-field" placeholder="Enter text here..." />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Search Input with Icon</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <input type="text" class="input-field pl-11" placeholder="Search tools..." />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tool Cards (Reusable Profile) -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Tool Cards (Feature Grid)</h2>
+            <p class="text-sm text-gray-500 mb-6">Use these components for listing tools on the homepage and index pages.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Format 1: Vertical Centered Tool Card (Homepage style) -->
+                <a href="#" class="card p-6 flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-50 dark:bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <!-- Icon (Replace SVG depending on tool) -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tool Name</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">A concise description of what the tool does goes here.</p>
+                    <span class="mt-auto px-4 py-2 bg-gray-50 dark:bg-slate-700 text-primary-600 dark:text-primary-400 font-medium rounded-lg text-sm group-hover:bg-primary-50 dark:group-hover:bg-primary-900/40 transition-colors w-full">Use Tool</span>
+                </a>
+
+            </div>
+
+             <h3 class="text-xl font-bold mt-10 mb-4 text-gray-900 dark:text-white">Tool Category Cards (Horizontal style)</h3>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Format 2: Horizontal Category Card -->
+                <a href="#" class="group flex items-start p-6 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-soft-lg hover:-translate-y-1 transition-all">
+                    <div class="p-3 rounded-xl bg-red-50 dark:bg-red-500/10 text-red-500 mr-4">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Category Title</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Short description of the category and its tools.</p>
+                    </div>
+                </a>
+             </div>
+
+             <h3 class="text-xl font-bold mt-10 mb-4 text-gray-900 dark:text-white">Related Tool Cards (Compact style)</h3>
+             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
+                <!-- Format 3: Compact Related Tool Card -->
+                <a href="#" class="card p-5 hover:bg-gray-50 dark:hover:bg-slate-800/80 flex items-center gap-4 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/30 text-primary-600 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Compact Tool</h4>
+                        <p class="text-xs text-gray-500">Fast subtext</p>
+                    </div>
+                </a>
+             </div>
+        </section>
+
+        <!-- Dropzones & Upload Elements -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Actions & Uploads</h2>
+            <div class="max-w-3xl space-y-8">
+                
+                <!-- Dropzone -->
+                <div class="drop-zone group">
+                    <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center mb-4 transition-transform duration-300 transform group-hover:scale-110">
+                        <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold mb-1">Drag & Drop your file here</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">or click to browse from device</p>
+                </div>
+
+                <!-- Active File Item -->
+                <div class="bg-slate-50 dark:bg-slate-900 rounded-xl p-4 border border-gray-200 dark:border-slate-700 flex items-center justify-between shadow-sm">
+                    <div class="flex items-center gap-4 overflow-hidden">
+                        <div class="p-3 bg-red-100 dark:bg-red-900/40 text-red-600 rounded-lg flex-shrink-0">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="truncate">
+                            <p class="font-bold text-gray-900 dark:text-gray-100 truncate">my_document_v2.pdf</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">2.4 MB</p>
+                        </div>
+                    </div>
+                    <button type="button" class="text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-slate-800 p-2 rounded-lg transition-colors focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Progress and Loaders -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Loaders & States</h2>
+            
+            <div class="flex flex-col items-center justify-center p-12 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm max-w-sm">
+                <div class="relative w-16 h-16 mb-6">
+                    <div class="absolute border-4 border-gray-200 dark:border-slate-700 rounded-full inset-0"></div>
+                    <div class="absolute border-4 border-primary-500 rounded-full inset-0 border-t-transparent animate-spin"></div>
+                </div>
+                <p class="text-lg font-bold text-gray-800 dark:text-gray-200">Crunching pixels...</p>
+                <p class="text-sm text-gray-500 mt-1">Processing locally in your browser</p>
+            </div>
+            
+        </section>
+
+        <!-- Success States -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Success Module</h2>
+
+            <div class="card bg-green-50/50 dark:bg-green-900/10 border-green-200 dark:border-green-900 p-8 text-center relative overflow-hidden max-w-3xl">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                </div>
+                <div class="relative z-10 text-center">
+                    <div class="w-16 h-16 bg-green-100 dark:bg-green-800/50 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-gray-900 mb-2">Process Complete!</h3>
+                    <p class="text-lg text-green-700 dark:text-green-400 font-medium mb-8">You saved 1.2 MB (45%)</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button type="button" class="btn-secondary py-3">Start Over</button>
+                        <button type="button" class="btn-primary !bg-green-600 hover:!bg-green-700 !shadow-green-900/20 text-lg px-8 py-3">Download File</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

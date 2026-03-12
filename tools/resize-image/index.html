@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resize an image instantly online for free. Change dimensions by pixels." />
+    <title>Resize Image | Tooleva</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    
+
+    
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Resize Image | Tooleva",
+    "description": "Resize an image instantly online for free. Change dimensions by pixels.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/tools/resize-image/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-primary-600 flex items-center gap-2">Tooleva</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a>
+                <a href="/tools/image-tools/index.html" class="text-primary-600 transition-colors">Image Tools</a>
+                <a href="/tools/calculators/index.html" class="hover:text-primary-600 transition-colors">Calculators</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+        <!-- Ad Space: Top Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 w-full">
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[90px]">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Leaderboard 728x90)</span>
+            </div>
+        </div>
+        <h1 class="text-3xl font-extrabold text-center mb-2">Resize Image</h1>
+        <p class="text-center text-gray-600 mb-8">Change the dimensions of your image quickly in the browser.</p>
+
+        <div class="card p-8 mb-8">
+            <div id="drop-zone" class="drop-zone mb-6">
+                <svg class="w-12 h-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                <p class="text-lg font-medium text-gray-700">Drag & Drop an image to resize</p>
+                <p class="text-sm text-gray-500 mt-1">Accepts JPG, PNG, WEBP</p>
+            </div>
+            
+            <input type="file" id="file-input" class="hidden" accept="image/*" />
+
+            <!-- Configuration Area -->
+            <div id="config-area" class="hidden animate-fade-in">
+                <div class="bg-white rounded-lg p-4 border border-gray-200 mb-6 flex items-center justify-between shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <img id="image-preview" class="w-16 h-16 object-contain rounded border border-gray-200" />
+                        <div>
+                            <p id="file-name" class="font-medium text-gray-900 truncate w-32 sm:w-64"></p>
+                            <p id="original-dimensions" class="text-sm text-gray-500">0 x 0 px</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">New Width (px)</label>
+                        <input type="number" id="input-width" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">New Height (px)</label>
+                        <input type="number" id="input-height" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500" />
+                    </div>
+                    <div class="md:col-span-2 flex items-center">
+                        <input type="checkbox" id="maintain-ratio" checked class="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500">
+                        <label for="maintain-ratio" class="ml-2 block text-sm text-gray-900">Maintain Aspect Ratio</label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button type="button" id="btn-cancel" class="btn-secondary">Cancel</button>
+                    <button type="button" id="btn-resize" class="btn-primary px-12 py-4 shadow-lg text-lg">Resize & Download</button>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="render-canvas" class="hidden"></canvas>
+    
+            <!-- Ad Space: Sidebar/Medium Rectangle -->
+            <div class="w-full bg-gray-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 font-medium py-4 min-h-[250px] mt-8">
+                <span class="text-xs uppercase tracking-wider mb-1 opacity-50">Advertisement</span>
+                <span>Space (Medium 300x250)</span>
+            </div>
+        </main>
+    <script type="module" src="./main.js"></script>
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

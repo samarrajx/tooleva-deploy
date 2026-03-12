@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core -->
+  <url><loc>https://tooleva.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  
+  <!-- Categories -->
+  <url><loc>https://tooleva.com/tools/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/pdf-tools/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tooleva.com/tools/image-tools/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tooleva.com/tools/calculators/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- PDF Tools -->
+  <url><loc>https://tooleva.com/tools/compress-pdf/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/merge-pdf/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/split-pdf/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/pdf-to-jpg/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Image Tools -->
+  <url><loc>https://tooleva.com/tools/image-compressor/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/resize-image/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tooleva.com/tools/jpg-to-png/index.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Calculators -->
+  <url><loc>https://tooleva.com/tools/age-calculator/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tooleva.com/tools/percentage-calculator/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tooleva.com/tools/word-counter/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://tooleva.com/blog/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tooleva.com/blog/how-to-compress-pdfs.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tooleva.com/blog/image-compression-guide.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tooleva.com/blog/why-convert-jpg-to-png.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tooleva.com/blog/word-count-tips.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tooleva.com/blog/best-free-online-tools.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+
+  <!-- Static -->
+  <url><loc>https://tooleva.com/about/index.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tooleva.com/contact/index.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tooleva.com/privacy/index.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://tooleva.com/terms/index.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

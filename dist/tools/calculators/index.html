@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Online Calculators and Text Utilities. Calculate age, percentages, and count words instantly." />
+    <title>Free Calculators & Text Tools | Tooleva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/style-DCa9Tmzr.css">
+    <script type="module">
+        import { initThemeToggle } from '../../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-primary-600 flex items-center gap-2">Tooleva</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a>
+                <a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a>
+                <a href="/tools/calculators/index.html" class="text-primary-600 transition-colors">Calculators</a>
+                <a href="/blog/index.html" class="hover:text-primary-600 transition-colors">Blog</a>
+                <button id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Calculators & Text Tools</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">Simple, lightweight, instant utilities for calculating standard equations and manipulating text.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Age Calculator -->
+                <a href="/tools/age-calculator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 border-t-4 border-t-indigo-500">
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Age Calculator</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Find out your exact age down to the days based on your date of birth instantly.</p>
+                </a>
+                
+                <!-- Percentage Calculator -->
+                <a href="/tools/percentage-calculator/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 border-t-4 border-t-indigo-500">
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Percentage Calculator</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Calculate precise percentage differences, margins, and ratios.</p>
+                </a>
+                
+                <!-- Word Counter -->
+                <a href="/tools/word-counter/index.html" class="card p-6 block hover:-translate-y-1 transform transition-all bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 border-t-4 border-t-indigo-500">
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Word Counter</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Count total words, characters, and spaces in any pasted block of text.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

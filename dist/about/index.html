@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn more about Tooleva, our mission, and why we build free, secure, client-side tools." />
+    <title>About Us | Tooleva</title>
+  <link rel="stylesheet" crossorigin href="/assets/style-DCa9Tmzr.css">
+    <script type="module">
+        import { initThemeToggle } from '../../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-primary-600">Tooleva</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a>
+                <a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a>
+                <a href="/tools/calculators/index.html" class="hover:text-primary-600 transition-colors">Calculators</a>
+                <button id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16">
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-primary text-gray-700">
+            <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-8 text-center">About Tooleva</h1>
+            <p class="lead">Tooleva was founded in 2026 with a simple mission: to provide the world with powerful, free digital tools that respect user privacy.</p>
+            
+            <h2>Our Privacy-First Approach</h2>
+            <p>Most online PDF compressors and image converters require you to upload your sensitive files to their remote servers. We fundamentally disagree with that model.</p>
+            <p>Every single tool on Tooleva runs entirely <strong>within your web browser</strong> (client-side processing). Once you load our website, your files never leave your device. We use modern WebAssembly and advanced browser APIs to crunch pixels and parse PDFs right on your local machine.</p>
+            
+            <h2>Why Free?</h2>
+            <p>We believe essential utilities shouldn't be locked behind expensive subscriptions or aggressive paywalls. We keep the lights on through unobtrusive Google AdSense placements, ensuring the tools remain free for students, professionals, and users worldwide.</p>
+        </article>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800 mt-auto"><div class="text-center text-sm">&copy; 2026 Tooleva.</div></footer>
+</body>
+</html>

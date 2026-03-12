@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tooleva Blog: Guides, tips, and tutorials on how to optimize your digital workflow with free browser tools." />
+    <title>Tooleva Blog & Guides</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+
+    
+    <script type="module">
+        import { initThemeToggle } from '../src/js/theme.js';
+        document.addEventListener('DOMContentLoaded', () => initThemeToggle('theme-toggle'));
+    </script>
+
+    
+
+    
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tooleva Blog & Guides",
+    "description": "Tooleva Blog: Guides, tips, and tutorials on how to optimize your digital workflow with free browser tools.",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "All",
+    "url": "https://tooleva.com/blog/",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+}
+    </script>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans min-h-screen flex flex-col transition-colors duration-300">
+
+    <header class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-primary-600 flex items-center gap-2">Tooleva</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a>
+                <a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a>
+                <a href="/tools/calculators/index.html" class="hover:text-primary-600 transition-colors">Calculators</a>
+                <a href="/blog/index.html" class="text-primary-600 transition-colors">Blog</a>
+                <button type="button" id="theme-toggle" class="p-2 ml-4 rounded-xl bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors focus:outline-none"></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Tooleva Blog</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">Tips, guides, and tutorials on how to make your digital life easier.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <a href="/blog/how-to-compress-pdfs.html" class="card block hover:-translate-y-1 transform transition-all group">
+                    <div class="h-48 bg-primary-100 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-primary-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-600 uppercase tracking-wide">PDF Tricks</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-2 mb-2">How to Compress PDFs for Free</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Learn how to shrink your large PDF files without losing quality and without uploading to a remote server.</p>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="/blog/image-compression-guide.html" class="card block hover:-translate-y-1 transform transition-all group">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-blue-600 uppercase tracking-wide">Web Optimization</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-2 mb-2">The Ultimate Image Compression Guide</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Every KB counts when building a website. Here's how to ensure your images load at lightning speed.</p>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="/blog/why-convert-jpg-to-png.html" class="card block hover:-translate-y-1 transform transition-all group">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-purple-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-purple-600 uppercase tracking-wide">Design Basics</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-2 mb-2">Why Should You Convert JPG to PNG?</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Understanding the difference between lossy and lossless formats, and why transparent backgrounds matter.</p>
+                    </div>
+                </a>
+                
+                <!-- Article 4 -->
+                <a href="/blog/word-count-tips.html" class="card block hover:-translate-y-1 transform transition-all group">
+                    <div class="h-48 bg-yellow-100 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wide">Writing</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-2 mb-2">Hitting Your Target Word count</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Tips for writers on how to gracefully expand or condense articles to meet rigid editorial guidelines.</p>
+                    </div>
+                </a>
+
+                <!-- Article 5 -->
+                <a href="/blog/best-free-online-tools.html" class="card block hover:-translate-y-1 transform transition-all group">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-green-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-green-600 uppercase tracking-wide">Productivity</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-2 mb-2">5 Best Free Online Tools for Work</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Discover the top free utilities that don't require software installations or expensive subscriptions.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+        <footer class="bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400 py-12 border-t border-gray-100 dark:border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-extrabold tracking-tight text-primary-600 flex items-center gap-3">
+                <img src="/logo.png" alt="Tooleva Logo" class="h-8 w-auto rounded-md shadow-sm">
+                Tooleva
+            </a>
+                <p class="text-sm">Free, secure, and client-side tools for everyday digital tasks. No installation required.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/pdf-tools/index.html" class="hover:text-primary-600 transition-colors">PDF Tools</a></li>
+                    <li><a href="/tools/image-tools/index.html" class="hover:text-primary-600 transition-colors">Image Tools</a></li>
+                    <li><a href="/tools/video-tools/index.html" class="hover:text-primary-600 transition-colors">Video Tools</a></li>
+                    <li><a href="/tools/audio-tools/index.html" class="hover:text-primary-600 transition-colors">Audio Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">More Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tools/text-tools/index.html" class="hover:text-primary-600 transition-colors">Text Tools</a></li>
+                    <li><a href="/tools/developer-tools/index.html" class="hover:text-primary-600 transition-colors">Developer Tools</a></li>
+                    <li><a href="/tools/security-tools/index.html" class="hover:text-primary-600 transition-colors">Security Tools</a></li>
+                    <li><a href="/tools/utility-tools/index.html" class="hover:text-primary-600 transition-colors">Utility Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about/index.html" class="hover:text-primary-600 transition-colors">About Us</a></li>
+                    <li><a href="/contact/index.html" class="hover:text-primary-600 transition-colors">Contact</a></li>
+                    <li><a href="/privacy/index.html" class="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms/index.html" class="hover:text-primary-600 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm font-medium border-t border-gray-100 dark:border-slate-800 pt-8">
+            &copy; 2026 Tooleva. Free Tools for Everyday Work.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Add Subtitle to Video",
+    "description": "Add subtitles to video online free. Embed SRT subtitle files into your MP4 securely in your browser quickly.",
+    "url": "/tools/add-subtitle/index.html"
+  },
+  {
+    "title": "Add Watermark",
+    "description": "Add text watermark to images free online. Protect your photos with customizable text overlays in your browser.",
+    "url": "/tools/add-watermark/index.html"
+  },
+  {
+    "title": "Age Calculator",
+    "description": "Calculate your exact age in years, months, and days using our free online age calculator.",
+    "url": "/tools/age-calculator/index.html"
+  },
+  {
+    "title": "Area Converter",
+    "description": "Free online Area Converter. Convert between square meters, hectares, acres, square feet, square miles, and more.",
+    "url": "/tools/area-converter/index.html"
+  },
+  {
+    "title": "Audio Compressor",
+    "description": "Compress audio online free. Reduce the file size of MP3, WAV, M4A, and OGG files easily in your browser.",
+    "url": "/tools/audio-compressor/index.html"
+  },
+  {
+    "title": "Audio Converter",
+    "description": "Convert audio files free online. Change WAV, M4A, OGG to MP3 securely in your browser quickly and freely.",
+    "url": "/tools/audio-converter/index.html"
+  },
+  {
+    "title": "Audio Cutter",
+    "description": "Audio Cutter online. Cut MP3, WAV or M4A audio instantly and export your favorite part as a new file.",
+    "url": "/tools/audio-cutter/index.html"
+  },
+  {
+    "title": "Audio Joiner",
+    "description": "Audio Joiner online. Combine or concatenate MP3, WAV or OGG audio files together for free.",
+    "url": "/tools/audio-joiner/index.html"
+  },
+  {
+    "title": "Audio Volume Booster",
+    "description": "Boost audio volume online for free. Make quiet MP3, WAV or M4A files louder securely in your browser quickly.",
+    "url": "/tools/audio-volume-booster/index.html"
+  },
+  {
+    "title": "Barcode Generator",
+    "description": "Free online Barcode Generator. Create custom 1D barcodes like CODE128, EAN, and UPC instantly.",
+    "url": "/tools/barcode-generator/index.html"
+  },
+  {
+    "title": "Base64 Decoder",
+    "description": "Free online Base64 Decoder. Decode Base64 strings back to plain text format instantly and securely.",
+    "url": "/tools/base64-decoder/index.html"
+  },
+  {
+    "title": "Base64 Encoder",
+    "description": "Free online Base64 Encoder. Convert plain text or data into Base64 format instantly and securely.",
+    "url": "/tools/base64-encoder/index.html"
+  },
+  {
+    "title": "Bcrypt Generator & Checker",
+    "description": "Free online Bcrypt Generator and Checker. Securely hash your passwords with Bcrypt and check if a hash matches a string.",
+    "url": "/tools/bcrypt-generator/index.html"
+  },
+  {
+    "title": "Binary Converter",
+    "description": "Free online Binary Converter. Convert standard text to binary arrays (0s and 1s) and decode back to text.",
+    "url": "/tools/binary-converter/index.html"
+  },
+  {
+    "title": "Blur Image",
+    "description": "Blur images free online. Obscure sensitive information or create artistic background effects.",
+    "url": "/tools/blur-image/index.html"
+  },
+  {
+    "title": "BMI Calculator",
+    "description": "Calculate your BMI (Body Mass Index) online. Quick, free calculator to check if you're at a healthy weight.",
+    "url": "/tools/bmi-calculator/index.html"
+  },
+  {
+    "title": "Case Converter & Capitalizer",
+    "description": "Free online Case Converter. Change text to UPPERTCASE, lowercase, title case, and sentence case easily.",
+    "url": "/tools/case-converter/index.html"
+  },
+  {
+    "title": "Change Audio Speed",
+    "description": "Change audio speed online for free. Speed up or slow down MP3 and WAV files easily in your browser.",
+    "url": "/tools/change-audio-speed/index.html"
+  },
+  {
+    "title": "Change Video Resolution",
+    "description": "Change video resolution online for free. Scale your videos to 1080p, 720p, 480p easily in your browser.",
+    "url": "/tools/change-video-resolution/index.html"
+  },
+  {
+    "title": "Change Video Speed",
+    "description": "Change video speed free online. Speed up or slow down MP4 and WebM videos instantly in your browser.",
+    "url": "/tools/change-video-speed/index.html"
+  },
+  {
+    "title": "Character Counter & Letter Count",
+    "description": "Free online Character Counter. Count letters, characters, strings and spaces instantly.",
+    "url": "/tools/character-counter/index.html"
+  },
+  {
+    "title": "Color Converter (HEX, RGB, HSL)",
+    "description": "Free online Color Converter tool. Convert colors between HEX, RGB, HSL, and HSV formats instantly.",
+    "url": "/tools/color-converter/index.html"
+  },
+  {
+    "title": "Compress PDF",
+    "description": "Compress PDF files online for free. Reduce file size quickly using your browser.",
+    "url": "/tools/compress-pdf/index.html"
+  },
+  {
+    "title": "Convert MP4 to GIF",
+    "description": "Convert MP4 to GIF free online. Turn your short videos into animated GIFs in seconds directly in your browser.",
+    "url": "/tools/convert-mp4-to-gif/index.html"
+  },
+  {
+    "title": "Convert PNG to JPG",
+    "description": "Convert PNG to JPG free online. Transform transparent PNGs into compressed JPG images.",
+    "url": "/tools/convert-png-to-jpg/index.html"
+  },
+  {
+    "title": "Convert Video Format",
+    "description": "Convert video formats free online. Convert between MP4, WebM, MOV, and MKV securely in your browser.",
+    "url": "/tools/convert-video-format/index.html"
+  },
+  {
+    "title": "Convert WebP to JPG",
+    "description": "Convert WebP to JPG free online. Transform next-gen WebP images into standard JPGs for compatibility.",
+    "url": "/tools/convert-webp-to-jpg/index.html"
+  },
+  {
+    "title": "Crop Image",
+    "description": "Crop images online for free. Trim the edges of photos and pictures securely in your browser.",
+    "url": "/tools/crop-image/index.html"
+  },
+  {
+    "title": "CSS Minifier & Compressor",
+    "description": "Free online CSS Minifier. Compress CSS stylesheets instantly to reduce file size and increase website speed.",
+    "url": "/tools/css-minifier/index.html"
+  },
+  {
+    "title": "Currency Converter",
+    "description": "Free online Currency Converter. Convert live exchange rates for USD, EUR, GBP, INR, JPY, and more globally.",
+    "url": "/tools/currency-converter/index.html"
+  },
+  {
+    "title": "Data Storage Converter",
+    "description": "Free online Data Storage Converter. Convert between Bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, and more instantly.",
+    "url": "/tools/data-storage-converter/index.html"
+  },
+  {
+    "title": "Days Between Dates",
+    "description": "Calculate days between two dates easily online. Find exactly how many weeks, days, and hours are between two calendar dates.",
+    "url": "/tools/days-between-dates/index.html"
+  },
+  {
+    "title": "Discount & Tax Calculator",
+    "description": "Calculate discounts and sales tax online. Quick, free calculator to figure out final price after discount.",
+    "url": "/tools/discount-calculator/index.html"
+  },
+  {
+    "title": "AES Encrypt & Decrypt Tool",
+    "description": "Free online AES Encrypt & Decrypt tool. Secure your text with military-grade AES-256 encryption using a secret key.",
+    "url": "/tools/encrypt-decrypt/index.html"
+  },
+  {
+    "title": "Extract Audio",
+    "description": "Extract audio from video online. Convert MP4, WebM to MP3 securely in your browser quickly and freely.",
+    "url": "/tools/extract-audio/index.html"
+  },
+  {
+    "title": "Hash Generator (MD5, SHA256)",
+    "description": "Free online Hash Generator. Generate secure MD5, SHA-1, SHA-256, and SHA-512 hashes from your strings instantly.",
+    "url": "/tools/hash-generator/index.html"
+  },
+  {
+    "title": "HTML Formatter & Beautifier",
+    "description": "Free online HTML Formatter. Beautify messy HTML code, indent tags correctly and make it human-readable.",
+    "url": "/tools/html-formatter/index.html"
+  },
+  {
+    "title": "HTML Minifier & Compressor",
+    "description": "Free online HTML Minifier. Compress HTML source code to reduce file size and improve website loading speed.",
+    "url": "/tools/html-minifier/index.html"
+  },
+  {
+    "title": "HTpasswd Generator",
+    "description": "Free online HTpasswd Generator. Generate Apache .htpasswd files with Bcrypt, MD5, or SHA-1 hashes to protect your web directories.",
+    "url": "/tools/htpasswd-generator/index.html"
+  },
+  {
+    "title": "Image Compressor",
+    "description": "Compress Image files online for free. Reduce JPG, PNG sizes instantly.",
+    "url": "/tools/image-compressor/index.html"
+  },
+  {
+    "title": "Image to Base64",
+    "description": "Convert Image to Base64 free online. Instantly generate a Base64 encoded string from your picture for embedding.",
+    "url": "/tools/image-to-base64/index.html"
+  },
+  {
+    "title": "JPG to PNG",
+    "description": "Convert JPG to PNG free online. Transcode image formats quickly and securely.",
+    "url": "/tools/jpg-to-png/index.html"
+  },
+  {
+    "title": "JavaScript Minifier & Compressor",
+    "description": "Free online Javascript Minifier. Compress JS source code instantly to reduce file size and optimize apps.",
+    "url": "/tools/js-minifier/index.html"
+  },
+  {
+    "title": "JSON Formatter & Beautifier",
+    "description": "Free online JSON Formatter and beautifier. Make your messy JSON code readable instantly, perfectly formatted.",
+    "url": "/tools/json-formatter/index.html"
+  },
+  {
+    "title": "JSON Minifier & Compressor",
+    "description": "Free online JSON Minifier and compressor. Reduce the size of JSON payloads for production instantly.",
+    "url": "/tools/json-minifier/index.html"
+  },
+  {
+    "title": "JSON Validator & Syntax Checker",
+    "description": "Free online JSON Validator tool. Quickly check if your JSON data is valid and pinpoint syntax errors instantly.",
+    "url": "/tools/json-validator/index.html"
+  },
+  {
+    "title": "JWT Decoder & Inspector",
+    "description": "Free online JWT Decoder. Instantly decode and inspect JSON Web Tokens safely within your browser.",
+    "url": "/tools/jwt-decoder/index.html"
+  },
+  {
+    "title": "Length Converter",
+    "description": "Free online Length Converter. Convert between meters, kilometers, miles, inches, feet, yards, and more instantly.",
+    "url": "/tools/length-converter/index.html"
+  },
+  {
+    "title": "Loan EMI Calculator",
+    "description": "Calculate your Loan EMI instantly. Free online EMI calculator for Home, Car, and Personal loans.",
+    "url": "/tools/loan-emi-calculator/index.html"
+  },
+  {
+    "title": "Lorem Ipsum Generator",
+    "description": "Generate Lorem Ipsum placeholder text online instantly. Perfect for web design, mockups, and testing.",
+    "url": "/tools/lorem-ipsum-generator/index.html"
+  },
+  {
+    "title": "Merge Audio",
+    "description": "Merge audio files online for free. Combine multiple MP3 or WAV audio tracks into a single file securely in your browser.",
+    "url": "/tools/merge-audio/index.html"
+  },
+  {
+    "title": "Merge PDF",
+    "description": "Merge multiple PDF files into one online for free. Combine PDFs in your browser.",
+    "url": "/tools/merge-pdf/index.html"
+  },
+  {
+    "title": "Merge Videos",
+    "description": "Merge videos online for free. Combine multiple MP4 or WebM video clips into a single video file securely in your browser.",
+    "url": "/tools/merge-videos/index.html"
+  },
+  {
+    "title": "Audio Noise Reduction",
+    "description": "Reduce background noise in audio files free online. Clean up voice recordings and remove static securely in your browser.",
+    "url": "/tools/noise-reduction/index.html"
+  },
+  {
+    "title": "Number Base Converter",
+    "description": "Free online Number Base Converter. Convert numbers between Decimal, Binary, Octal, Hexadecimal, and custom bases.",
+    "url": "/tools/number-base-converter/index.html"
+  },
+  {
+    "title": "Strong Password Generator",
+    "description": "Free online Password Generator. Create secure, random, and strong passwords instantly with custom settings.",
+    "url": "/tools/password-generator/index.html"
+  },
+  {
+    "title": "Password Strength Checker",
+    "description": "Free online Password Strength Checker. Analyze your password to see how secure it is against cracking.",
+    "url": "/tools/password-strength-checker/index.html"
+  },
+  {
+    "title": "PDF Rotator",
+    "description": "Rotate PDF files free online. Turn all pages in a PDF document accurately.",
+    "url": "/tools/pdf-rotator/index.html"
+  },
+  {
+    "title": "PDF to Excel",
+    "description": "Convert PDF to Excel free online. Extract tabular data from your PDF into a CSV or Excel file.",
+    "url": "/tools/pdf-to-excel/index.html"
+  },
+  {
+    "title": "PDF to JPG",
+    "description": "Convert PDF to JPG free online. Extract all pages from a PDF as high-quality images.",
+    "url": "/tools/pdf-to-jpg/index.html"
+  },
+  {
+    "title": "PDF to PNG",
+    "description": "Convert PDF to PNG free online. Extract all pages from a PDF as lossless PNG images.",
+    "url": "/tools/pdf-to-png/index.html"
+  },
+  {
+    "title": "PDF to PowerPoint",
+    "description": "Convert PDF to PowerPoint free online. Extract pages from your PDF into a PPTX presentation.",
+    "url": "/tools/pdf-to-powerpoint/index.html"
+  },
+  {
+    "title": "PDF to Word",
+    "description": "Convert PDF to Word free online. Extract text from your PDF into a Word document.",
+    "url": "/tools/pdf-to-word/index.html"
+  },
+  {
+    "title": "PDF Unlock",
+    "description": "Unlock PDF files free online. Remove passwords and restrictions from your PDFs.",
+    "url": "/tools/pdf-unlock/index.html"
+  },
+  {
+    "title": "Percentage Calculator",
+    "description": "Calculate percentages instantly. Find out what percent X is of Y, or the percentage increase.",
+    "url": "/tools/percentage-calculator/index.html"
+  },
+  {
+    "title": "Profit Margin Calculator",
+    "description": "Calculate your business profit margin, markup price, and gross profit online. Free profit margin calculator.",
+    "url": "/tools/profit-margin-calculator/index.html"
+  },
+  {
+    "title": "QR Code Generator",
+    "description": "Free online QR Code Generator. Create custom QR codes for URLs, text, Wi-Fi, and contacts instantly.",
+    "url": "/tools/qr-code-generator/index.html"
+  },
+  {
+    "title": "Random Color Generator",
+    "description": "Free online Random Color Generator. Instantly generate beautiful random colors in HEX, RGB, and HSL formats for design projects.",
+    "url": "/tools/random-color-generator/index.html"
+  },
+  {
+    "title": "Random Name Generator",
+    "description": "Free online Random Name Generator. Generate fake random names for characters, babies, or personas.",
+    "url": "/tools/random-name-generator/index.html"
+  },
+  {
+    "title": "Random Number Generator",
+    "description": "Free online Random Number Generator. Generate completely random, secure numbers instantly for lotteries, ranges, or passwords.",
+    "url": "/tools/random-number-generator/index.html"
+  },
+  {
+    "title": "Random String Generator",
+    "description": "Free online Random String Generator. Get secure random alphanumeric strings instantly for tokens, salts, or passwords.",
+    "url": "/tools/random-string-generator/index.html"
+  },
+  {
+    "title": "Random Text & Lorem Ipsum Generator",
+    "description": "Generate random text and Lorem Ipsum online instantly. Perfect for web design placeholders and testing.",
+    "url": "/tools/random-text-generator/index.html"
+  },
+  {
+    "title": "Regex Tester",
+    "description": "Free online Regex Tester. Test, analyze, and debug your Regular Expressions against strings easily.",
+    "url": "/tools/regex-tester/index.html"
+  },
+  {
+    "title": "Remove Duplicate Lines",
+    "description": "Remove duplicate lines from text automatically online. Free duplicate line remover for lists and emails.",
+    "url": "/tools/remove-duplicate-lines/index.html"
+  },
+  {
+    "title": "Remove Extra Spaces",
+    "description": "Remove extra spaces between words and lines online for free. Clean up your text formatting instantly.",
+    "url": "/tools/remove-extra-spaces/index.html"
+  },
+  {
+    "title": "Resize Image",
+    "description": "Resize an image instantly online for free. Change dimensions by pixels.",
+    "url": "/tools/resize-image/index.html"
+  },
+  {
+    "title": "Rotate Image",
+    "description": "Rotate images free online. Turn your photos 90 degrees or flip them securely in your browser.",
+    "url": "/tools/rotate-image/index.html"
+  },
+  {
+    "title": "Rotate Video",
+    "description": "Rotate video free online. Fix upside down or sideways videos securely in your browser without uploading.",
+    "url": "/tools/rotate-video/index.html"
+  },
+  {
+    "title": "Scientific Calculator",
+    "description": "Free Online Scientific Calculator. Perform advanced math, trigonometry, logarithms, and standard arithmetic easily.",
+    "url": "/tools/scientific-calculator/index.html"
+  },
+  {
+    "title": "Secure Text Tool",
+    "description": "Free online Secure Notes Tool. Protect your plain text messages into obfuscated locked notes.",
+    "url": "/tools/secure-text/index.html"
+  },
+  {
+    "title": "URL Slug Generator",
+    "description": "Generate URL-friendly slugs from any text online easily. Fast slug generator for developers and SEO.",
+    "url": "/tools/slug-generator/index.html"
+  },
+  {
+    "title": "Speed Converter",
+    "description": "Free online Speed Converter. Convert between mph, km/h, knots, m/s, and ft/s instantly.",
+    "url": "/tools/speed-converter/index.html"
+  },
+  {
+    "title": "Split PDF",
+    "description": "Split PDF files online for free. Extract pages from your PDF file securely.",
+    "url": "/tools/split-pdf/index.html"
+  },
+  {
+    "title": "Temperature Converter",
+    "description": "Free online Temperature Converter. Convert between Celsius, Fahrenheit, and Kelvin instantly.",
+    "url": "/tools/temperature-converter/index.html"
+  },
+  {
+    "title": "Text Reverser | Reverse Text Online",
+    "description": "Reverse text, words, and letters online for free. Fun text reverser and backward text generator.",
+    "url": "/tools/text-reverser/index.html"
+  },
+  {
+    "title": "Sort Text Editor",
+    "description": "Sort text alphabetically online. Free tool to alphabetize lists A-Z, Z-A, by length or randomly.",
+    "url": "/tools/text-sorter/index.html"
+  },
+  {
+    "title": "Text to Handwriting Converter",
+    "description": "Convert your digital typed text to realistic handwriting online for free. Download as an image instantly.",
+    "url": "/tools/text-to-handwriting/index.html"
+  },
+  {
+    "title": "Time Calculator",
+    "description": "Add or subtract time easily online. Fast, free time calculator for hours, minutes, and seconds.",
+    "url": "/tools/time-calculator/index.html"
+  },
+  {
+    "title": "Time Zone Converter",
+    "description": "Free online Time Zone Converter. Instantly calculate matching dates and times across global timezones.",
+    "url": "/tools/time-zone-converter/index.html"
+  },
+  {
+    "title": "Tip Calculator",
+    "description": "Calculate your customized restaurant tip and split the bill easily online. Free tip and split calculator.",
+    "url": "/tools/tip-calculator/index.html"
+  },
+  {
+    "title": "Trim Audio",
+    "description": "Trim audio files online for free. Cut out unwanted parts of your MP3, WAV or M4A audio instantly.",
+    "url": "/tools/trim-audio/index.html"
+  },
+  {
+    "title": "Trim Video",
+    "description": "Trim video files online for free. Cut out unwanted parts of your MP4 or WebM videos instantly.",
+    "url": "/tools/trim-video/index.html"
+  },
+  {
+    "title": "URL Decoder",
+    "description": "Free online URL Decoder. Decode URL-encoded strings back to plain text format instantly.",
+    "url": "/tools/url-decoder/index.html"
+  },
+  {
+    "title": "URL Encoder",
+    "description": "Free online URL Encoder. Convert text into a URL-encoded string safely for web links and APIs.",
+    "url": "/tools/url-encoder/index.html"
+  },
+  {
+    "title": "UUID Checker",
+    "description": "Free online UUID Checker. Validate, parse, and verify UUIDs (v1, v3, v4, v5) formatting and structure.",
+    "url": "/tools/uuid-checker/index.html"
+  },
+  {
+    "title": "UUID Converter",
+    "description": "Free online UUID Converter. Convert UUIDs between Standard string, Hexadecimal, Base64, and URN formats.",
+    "url": "/tools/uuid-converter/index.html"
+  },
+  {
+    "title": "UUID / GUID Generator",
+    "description": "Free online UUID/GUID Generator. Generate completely random v4 UUIDs instantly in bulk for databases and code.",
+    "url": "/tools/uuid-generator/index.html"
+  },
+  {
+    "title": "Video Compressor",
+    "description": "Compress video files online for free. Reduce MP4 and WebM file sizes instantly without losing quality.",
+    "url": "/tools/video-compressor/index.html"
+  },
+  {
+    "title": "Weight Converter",
+    "description": "Free online Weight Converter. Convert between kilograms, grams, pounds, ounces, tons, and more instantly.",
+    "url": "/tools/weight-converter/index.html"
+  },
+  {
+    "title": "Word Counter",
+    "description": "Free online Word Counter. Count words, characters, sentences, and paragraphs instantly.",
+    "url": "/tools/word-counter/index.html"
+  }
+]

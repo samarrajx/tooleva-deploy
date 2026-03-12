@@ -1,0 +1,110 @@
+import * as pdfjsLib from 'pdfjs-dist';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
+import JSZip from 'jszip';
+import { initDropzone } from '../../src/js/dropzone.js';
+import { downloadBlob, showToast, getEl } from '../../src/js/utils.js';
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+
+let currentFile = null;
+let conversionZipBlob = null;
+
+const ui = {
+    dropZone: getEl('drop-zone'),
+    fileInfo: getEl('file-info'),
+    fileName: getEl('file-name'),
+    btnRemove: getEl('btn-remove'),
+    btnConvert: getEl('btn-convert'),
+    loader: getEl('loader'),
+    progressText: getEl('progress-text'),
+    resultArea: getEl('result-area'),
+    btnDownload: getEl('btn-download'),
+    canvas: getEl('render-canvas')
+};
+
+initDropzone('drop-zone', 'file-input', handleFileSelection, { accept: '.pdf', multiple: false });
+
+ui.btnRemove.addEventListener('click', resetUI);
+ui.btnConvert.addEventListener('click', convertPdf);
+ui.btnDownload.addEventListener('click', () => {
+    if (conversionZipBlob && currentFile) {
+        const baseName = currentFile.name.replace(/\.pdf$/i, '');
+        downloadBlob(conversionZipBlob, `${baseName}_images.zip`);
+    }
+});
+
+function handleFileSelection(files) {
+    const file = files[0];
+    if (file.type !== 'application/pdf') return;
+
+    currentFile = file;
+    ui.fileName.textContent = file.name;
+    
+    ui.dropZone.classList.add('hidden');
+    ui.fileInfo.classList.remove('hidden');
+    ui.btnConvert.classList.remove('hidden');
+}
+
+function resetUI() {
+    currentFile = null;
+    conversionZipBlob = null;
+    ui.fileInfo.classList.add('hidden');
+    ui.btnConvert.classList.add('hidden');
+    ui.resultArea.classList.add('hidden');
+    ui.dropZone.classList.remove('hidden');
+}
+
+async function convertPdf() {
+    if (!currentFile) return;
+    ui.btnConvert.classList.add('hidden');
+    ui.loader.classList.remove('hidden');
+    ui.progressText.textContent = "Loading PDF engine...";
+
+    try {
+        const arrayBuffer = await currentFile.arrayBuffer();
+        const loadingTask = pdfjsLib.getDocument({ data: new Uint8Array(arrayBuffer) });
+        const pdf = await loadingTask.promise;
+        const numPages = pdf.numPages;
+        
+        const zip = new JSZip();
+        const baseName = currentFile.name.replace(/\.pdf$/i, '');
+        const ctx = ui.canvas.getContext('2d');
+
+        for (let i = 1; i <= numPages; i++) {
+            ui.progressText.textContent = `Rendering page ${i} of ${numPages}...`;
+            
+            const page = await pdf.getPage(i);
+            
+            // Use a higher scale for better JPG quality (e.g. 2.0 = 200% resolution)
+            const viewport = page.getViewport({ scale: 2.0 });
+            
+            ui.canvas.width = viewport.width;
+            ui.canvas.height = viewport.height;
+            
+            const renderContext = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+            
+            await page.render(renderContext).promise;
+            
+            const blob = await new Promise(resolve => ui.canvas.toBlob(resolve, 'image/jpeg', 0.85));
+            
+            const padLen = String(numPages).length;
+            const pageNum = String(i).padStart(padLen, '0');
+            zip.file(`${baseName}_page_${pageNum}.jpg`, blob);
+        }
+
+        ui.progressText.textContent = "Packaging ZIP file...";
+        conversionZipBlob = await zip.generateAsync({ type: 'blob' });
+        
+        ui.resultArea.classList.remove('hidden');
+        showToast('Converted to JPG successfully!');
+    } catch (error) {
+        console.error("PDF to JPG Error:", error);
+        showToast('Error occurred during conversion.', 'error');
+        ui.btnConvert.classList.remove('hidden');
+    } finally {
+        ui.loader.classList.add('hidden');
+    }
+}
