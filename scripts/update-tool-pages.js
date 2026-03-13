@@ -61,6 +61,7 @@ const HEAD_ADDITIONS = `
   html:not(.dark) .glass-nav-new a, html:not(.dark) .glass-nav-new span { color: #374151 !important; }
   html:not(.dark) .glass-nav-new a:hover { color: #7f13ec !important; }
   html:not(.dark) .glass-nav-new .nav-brand-text { color: #1a1a2e !important; }
+  html:not(.dark) main h1, html:not(.dark) main h2, html:not(.dark) main h3, html:not(.dark) main p, html:not(.dark) main label, html:not(.dark) main span:not(.material-symbols-outlined) { color: #1a1a2e !important; }
   html:not(.dark) .tlv-footer { background: #f0eef4 !important; border-top: 1px solid rgba(0,0,0,0.08) !important; }
   html:not(.dark) .tlv-footer p, html:not(.dark) .tlv-footer a { color: #6b7280 !important; }
   html:not(.dark) .tlv-footer h4 { color: #111827 !important; }
@@ -68,6 +69,7 @@ const HEAD_ADDITIONS = `
   /* Toggle button */
   html.dark  #tlv-theme-icon::after  { content: 'light_mode'; }
   html:not(.dark) #tlv-theme-icon::after { content: 'dark_mode'; }
+  html:not(.dark) #tlv-theme-toggle:hover { background: rgba(0,0,0,0.05) !important; }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
