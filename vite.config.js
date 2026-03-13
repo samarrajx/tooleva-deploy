@@ -13,13 +13,15 @@ function getHtmlFiles(dir) {
       const stat = statSync(fullPath);
 
       if (stat.isDirectory()) {
+        // Skip node_modules and dist
+        if (item === "node_modules" || item === "dist") return;
         scan(fullPath);
       } else if (item.endsWith(".html")) {
         const name = fullPath
           .replace(process.cwd(), "")
-          .replace(/^\/+/, "")
+          .replace(/^[/\\]+/, "")
           .replace(".html", "")
-          .replace(/\//g, "_");
+          .replace(/[/\\]/g, "_");
 
         files[name] = fullPath;
       }
