@@ -1,65 +1,81 @@
-import fs from 'fs';
-import path from 'path';
+/**
+ * Auto-generates public/sitemap.xml by scanning all tool/blog/page HTML files.
+ * Run: node scripts/generate-sitemap.js
+ */
+
+import { readdirSync, statSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { resolve, join } from 'path';
 import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const ROOT_DIR = path.resolve(__dirname, '..');
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
+const ROOT = resolve(__dirname, '..');
 const BASE_URL = 'https://tooleva.com';
+const TODAY = new Date().toISOString().split('T')[0];
 
-function getFiles(dir, filesList = []) {
-    const files = fs.readdirSync(dir);
-    for (const file of files) {
-        const filePath = path.join(dir, file);
-        if (filePath.includes('node_modules') || filePath.includes('dist') || filePath.includes('.git')) {
-            continue;
-        }
-        if (fs.statSync(filePath).isDirectory()) {
-            getFiles(filePath, filesList);
-        } else if (filePath.endsWith('.html')) {
-            filesList.push(filePath);
-        }
-    }
-    return filesList;
+// Files/pages to EXCLUDE from sitemap
+const EXCLUDE_FILES = new Set([
+  'ui-components.html', // dev-only file
+]);
+
+const urls = [];
+
+function addUrl(loc, priority, changefreq = 'weekly') {
+  urls.push({ loc, priority, changefreq, lastmod: TODAY });
 }
 
-const allHtmlFiles = getFiles(ROOT_DIR);
+// 1. Homepage
+addUrl(`${BASE_URL}/`, 1.0);
 
-let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+// 2. Tools index
+addUrl(`${BASE_URL}/tools/`, 0.9);
 
-allHtmlFiles.forEach(file => {
-    // Relative path from ROOT
-    const relPath = path.relative(ROOT_DIR, file);
-    
-    let urlPath = relPath.split(path.sep).join('/');
-    
-    if (urlPath.endsWith('index.html')) {
-        urlPath = urlPath.slice(0, -10);
+// 3. Blog index
+addUrl(`${BASE_URL}/blog/`, 0.7);
+
+// 4. Static pages
+['about', 'contact', 'privacy', 'terms'].forEach(page =>
+  addUrl(`${BASE_URL}/${page}/`, 0.5)
+);
+
+// 5. All tool sub-directories that have index.html
+const toolsDir = join(ROOT, 'tools');
+readdirSync(toolsDir, { withFileTypes: true })
+  .filter(d => d.isDirectory())
+  .map(d => d.name)
+  .sort()
+  .forEach(name => {
+    const indexPath = join(toolsDir, name, 'index.html');
+    if (existsSync(indexPath)) {
+      addUrl(`${BASE_URL}/tools/${name}/`, 0.8);
     }
+  });
 
-    const fullUrl = `${BASE_URL}/${urlPath}`;
-    const priority = urlPath === '' ? '1.0' : (urlPath.startsWith('tools/') ? '0.8' : '0.6');
-    
-    const stat = fs.statSync(file);
-    const lastMod = stat.mtime.toISOString().split('T')[0];
+// 6. Individual blog posts (clean slug URLs)
+const blogDir = join(ROOT, 'blog');
+readdirSync(blogDir)
+  .filter(f => f.endsWith('.html') && f !== 'index.html' && !EXCLUDE_FILES.has(f))
+  .sort()
+  .forEach(f => {
+    const slug = f.replace('.html', '');
+    addUrl(`${BASE_URL}/blog/${slug}/`, 0.6);
+  });
 
-    xml += `  <url>\n`;
-    xml += `    <loc>${fullUrl}</loc>\n`;
-    xml += `    <lastmod>${lastMod}</lastmod>\n`;
-    xml += `    <changefreq>weekly</changefreq>\n`;
-    xml += `    <priority>${priority}</priority>\n`;
-    xml += `  </url>\n`;
-});
+// 7. Generate XML
+const xmlEntries = urls
+  .map(({ loc, lastmod, changefreq, priority }) =>
+    `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority.toFixed(1)}</priority>\n  </url>`
+  )
+  .join('\n');
 
-xml += `</urlset>`;
+const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${xmlEntries}
+</urlset>
+`;
 
-// Ensure public dir exists
-const publicDir = path.join(ROOT_DIR, 'public');
-if (!fs.existsSync(publicDir)) {
-    fs.mkdirSync(publicDir);
-}
+const publicDir = join(ROOT, 'public');
+if (!existsSync(publicDir)) mkdirSync(publicDir);
 
-fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml);
-console.log(`✅ successfully generated sitemap.xml with ${allHtmlFiles.length} URLs.`);
+const outputPath = join(publicDir, 'sitemap.xml');
+writeFileSync(outputPath, xml, 'utf-8');
+console.log(`✅ Sitemap generated: ${urls.length} URLs → public/sitemap.xml`);

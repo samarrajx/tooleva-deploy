@@ -1,740 +1,734 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tooleva.com/about/</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/best-free-online-tools.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/how-to-compress-pdfs.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/image-compression-guide.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/why-convert-jpg-to-png.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/blog/word-count-tips.html</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/contact/</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://tooleva.com/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tooleva.com/privacy/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://tooleva.com/tools/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/blog/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/about/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/contact/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/privacy/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tooleva.com/terms/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/add-subtitle/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/add-watermark/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/age-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/area-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-compressor/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-cutter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-joiner/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/audio-volume-booster/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/barcode-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/base64-decoder/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/base64-encoder/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/bcrypt-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/binary-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/blur-image/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/bmi-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/calculators/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/case-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/change-audio-speed/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/change-video-resolution/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/change-video-speed/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/character-counter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/color-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/compress-pdf/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/convert-mp4-to-gif/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/convert-png-to-jpg/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/convert-video-format/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/convert-webp-to-jpg/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/converter-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/crop-image/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/css-minifier/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/currency-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/data-storage-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/days-between-dates/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/developer-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/discount-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/encrypt-decrypt/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/extract-audio/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/hash-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/html-formatter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/html-minifier/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/htpasswd-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/image-compressor/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/image-to-base64/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/image-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tooleva.com/tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/jpg-to-png/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/js-minifier/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/json-formatter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/json-minifier/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/json-validator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/jwt-decoder/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/length-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/loan-emi-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/lorem-ipsum-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/merge-audio/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/merge-pdf/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/merge-videos/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/noise-reduction/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/number-base-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/password-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/password-strength-checker/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-rotator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-to-excel/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-to-jpg/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-to-png/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-to-powerpoint/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-to-word/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/pdf-unlock/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/percentage-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/profit-margin-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/qr-code-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/random-color-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/random-name-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/random-number-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/random-string-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/random-text-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/regex-tester/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/remove-duplicate-lines/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/remove-extra-spaces/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/resize-image/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/rotate-image/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/rotate-video/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/scientific-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/secure-text/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/security-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/slug-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/speed-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/split-pdf/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/temperature-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/text-reverser/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/text-sorter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/text-to-handwriting/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/text-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/time-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/time-zone-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/tip-calculator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/trim-audio/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/trim-video/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/url-decoder/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/url-encoder/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/utility-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/uuid-checker/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/uuid-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/uuid-generator/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/video-compressor/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/video-tools/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/weight-converter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tooleva.com/tools/word-counter/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tooleva.com/ui-components.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://tooleva.com/blog/best-free-online-tools/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/blog/how-to-compress-pdfs/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/blog/image-compression-guide/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/blog/why-convert-jpg-to-png/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tooleva.com/blog/word-count-tips/</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

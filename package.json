@@ -7,10 +7,11 @@
     "node": "20.x"
   },
   "scripts": {
-  "dev": "node node_modules/vite/bin/vite.js",
-  "build": "node node_modules/vite/bin/vite.js build",
-  "preview": "node node_modules/vite/bin/vite.js preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sitemap": "node scripts/generate-sitemap.js"
+  },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",
     "@ffmpeg/util": "^0.12.2",
